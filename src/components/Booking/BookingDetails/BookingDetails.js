@@ -16,7 +16,7 @@ const BookingDetails = ({booking, date}) => {
     const [bookings, setBookings] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:20000/bookings')
+        fetch('https://pacific-springs-57570.herokuapp.com/bookings')
             .then(res => res.json())
             .then(data => {
                 setBookings(data)

@@ -9,7 +9,7 @@ const BookingList = () => {
     
 
     useEffect(() => {
-        fetch('http://localhost:20000/bookingList?email='+ loggedInUser.email, 
+        fetch('https://pacific-springs-57570.herokuapp.com/bookingList?email='+ loggedInUser.email, 
         )
         .then(res => res.json())
         .then(data => {

@@ -33,7 +33,7 @@ const BookingForm = ({ modalIsOpen, closeModal, image, bookingOn, visitingHour, 
         data.created = new Date();
         console.log(data);
 
-        fetch('http://localhost:20000/booking', {
+        fetch('https://pacific-springs-57570.herokuapp.com/booking', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)
